@@ -311,6 +311,7 @@ require("lazy").setup({
 
 			-- Keymap for toggling UndoTree
 			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "[U]ndo Tree Toggle" })
+			vim.keymap.set("n", "<C-u>", vim.cmd.UndotreeFocus, { desc = "[U]ndo Tree Focus" })
 
 			-- Optionally, you can set keymaps for showing and hiding UndoTree separately
 			vim.keymap.set("n", "<leader>us", vim.cmd.UndotreeShow, { desc = "[U]ndo Tree [S]how" })
